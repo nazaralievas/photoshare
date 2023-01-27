@@ -9,6 +9,7 @@
     <style>
         .image-thumbail{
             height: 200px;
+            object-fit: cover;
         }
     </style>
     <title>Galery</title>
@@ -26,6 +27,11 @@
                         <li class="list-group-item">All</li>
                         <li class="list-group-item">cat</li>
                         <li class="list-group-item">cat</li>
+
+                        <li class="list-group-item">
+                            <a href="{% url 'add' %}" class="btn btn-dark btn-block btn-sm m-1">Add Photo</a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -34,7 +40,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card my-2">
-                            <img class="image-thumbail" src="" alt="Card image cap">
+                            <img class="image-thumbail" src="https://assets-au-01.kc-usercontent.com/ab37095e-a9cb-025f-8a0d-c6d89400e446/aad691da-72f9-44a1-a382-ad23b3e8cc79/article-caring-for-older-cats.jpg?auto=format&lossless=1&auto=format&lossless=1">
 
                             <div class="card-body">
                                 <small>Category: Pets</small>
